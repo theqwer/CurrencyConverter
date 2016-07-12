@@ -1,0 +1,7 @@
+---
+applications:
+- name: CurrencyConverter
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  instances: 1
+  memory: 1G
+  path: ./build/libs/CurrencyConverter-1.0.jar
