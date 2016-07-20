@@ -2,10 +2,12 @@ package com.currencyconverter.application.entity;
 
 import java.io.Serializable;
 
-public class Rates implements Serializable {
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Rates implements Serializable{
 	
-	private static final long serialVersionUID = 6110420157240661336L;
-	
+	private static final long serialVersionUID = 1L;
 	private float AUD;
 	private float BGN;
 	private float BRL;
